@@ -147,7 +147,7 @@ currentClass.addStudent("Jermaine", "Hunter");
 currentClass.addStudent("Ivan", "Trejo");
 currentClass.addStudent("Isaiah", "Masse");
 currentClass.addStudent("Richard", "Lawson");
-currentClass.addStudent("Cezard", "Ganson");
+currentClass.addStudent("Cezar", "Ganson");
 currentClass.addStudent("Carson", "Mogk");
 currentClass.addStudent("Cara", "Krotty");
 currentClass.addStudent("Brian", "Turk");
