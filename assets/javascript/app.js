@@ -155,3 +155,4 @@ currentClass.addStudent("Ashley", "Freedenburg");
 currentClass.addStudent("Andres", "Valdes");
 currentClass.addStudent("Steven", "Dytewski");
 currentClass.addStudent("Brandon", "Harris");
+currentClass.addStudent("Oliver", "Brewer")
