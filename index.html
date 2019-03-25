@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Random Groups!</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-5">Random Group Generator</h1>
+                    <p>Choose the amount to sort by and then press sort by group size or number of groups.</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3 text-center">
+                <button id="groups-up" class="btn btn-primary">More!</button>
+                <!-- <i id="groups-up" class="fas fa-sort-up arrow" data-fa-transform="grow-16 down-6"></i> -->
+                <h1 id="groups-display" class="display-1">1</h1>
+                <!-- <i id="groups-down" class="fas fa-sort-down arrow"></i> -->
+                <button id="groups-down" class="btn btn-primary">Less!</button>
+                <button id="groups-submit" class="btn btn-primary">Go!</button>
+                <h3>Number of Groups</h3>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3 text-center">
+                <button id="size-up" class="btn btn-primary">More!</button>
+                <!-- <i id="size-up" class="fas fa-sort-up arrow"></i> -->
+                <h1 id="size-display" class="display-1">1</h1>
+                <!-- <i id="size-down" class="fas fa-sort-down arrow"></i> -->
+                <button id="size-down" class="btn btn-primary">Less!</button>
+                <button id="size-submit" class="btn btn-primary">Go!</button>
+                <h3>Size of Groups</h3>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-0" class="col-md-3"></div>
+            <div id="group-card-1" class="col-md-3"></div>
+            <div id="group-card-2" class="col-md-3"></div>
+            <div id="group-card-3" class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-4" class="col-md-3"></div>
+            <div id="group-card-5" class="col-md-3"></div>
+            <div id="group-card-6" class="col-md-3"></div>
+            <div id="group-card-7" class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-8" class="col-md-3"></div>
+            <div id="group-card-9" class="col-md-3"></div>
+            <div id="group-card-10" class="col-md-3"></div>
+            <div id="group-card-11" class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-12" class="col-md-3"></div>
+            <div id="group-card-13" class="col-md-3"></div>
+            <div id="group-card-14" class="col-md-3"></div>
+            <div id="group-card-15" class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-16" class="col-md-3"></div>
+            <div id="group-card-17" class="col-md-3"></div>
+            <div id="group-card-18" class="col-md-3"></div>
+            <div id="group-card-19" class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div id="group-card-20" class="col-md-3"></div>
+            <div id="group-card-21" class="col-md-3"></div>
+            <div id="group-card-22" class="col-md-3"></div>
+            <div id="group-card-23" class="col-md-3"></div>
+        </div>
+    </div>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
