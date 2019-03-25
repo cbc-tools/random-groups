@@ -11,3 +11,7 @@
 .card-header {
     background-color:lightslategray;
 }
+
+.jumbotron {
+    padding: 1rem;
+}
