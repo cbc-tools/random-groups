@@ -147,12 +147,12 @@ currentClass.addStudent("Jermaine", "Hunter");
 currentClass.addStudent("Ivan", "Trejo");
 currentClass.addStudent("Isaiah", "Masse");
 currentClass.addStudent("Richard", "Lawson");
-currentClass.addStudent("Cezar", "Ganson");
+currentClass.addStudent("Cezar", "Ganzon");
 currentClass.addStudent("Carson", "Mogk");
-currentClass.addStudent("Cara", "Krotty");
+currentClass.addStudent("Cara", "Crotty");
 currentClass.addStudent("Brian", "Turk");
 currentClass.addStudent("Ashley", "Freedenburg");
 currentClass.addStudent("Andres", "Valdes");
 currentClass.addStudent("Steven", "Dytewski");
 currentClass.addStudent("Brandon", "Harris");
-currentClass.addStudent("Oliver", "Brewer")
+currentClass.addStudent("Oliver", "Brewer");
