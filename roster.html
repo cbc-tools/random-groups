@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Random Groups!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="mb-3">
+        <h1>Class Roster</h1>
+      </header>
+
+      <!-- text box for adding students (csv) -->
+      <form id="add-students-form">
+        <div class="form-group">
+          <label for="add-students">Add Students</label>
+          <textarea
+            name="add-students"
+            placeholder="Jim, Sue, Liz"
+            class="form-control"
+            id="add-students"
+            rows="3"
+          ></textarea>
+        </div>
+        <button class="btn btn-block btn-primary">Submit</button>
+      </form>
+      <!-- list all the students with edit/delete button -->
+      <hr />
+      <div>
+        <h2>Roster</h2>
+        <div id="roster"></div>
+      </div>
+    </div>
+
+    <footer class="container pt-5">
+      <nav>
+        <a href="/">Random Groups</a>
+        <a href="/roster.html">Manage Roster</a>
+      </nav>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/students.js"></script>
+    <script src="assets/javascript/roster.js"></script>
+  </body>
+</html>
