@@ -7,7 +7,7 @@ const createStudents = ({ getStudents, setStudents }) => {
     if (!newName || newName.length < 1) {
       throw new Error("Name must have at least one character.");
     }
-    if (students.some(name => newName === name)) {
+    if (students.includes(newName)) {
       throw new Error("Name must be unique.");
     }
     students.push(newName);

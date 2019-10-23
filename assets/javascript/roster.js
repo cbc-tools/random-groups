@@ -2,6 +2,7 @@ $(function() {
   const $roster = $("#roster");
   const $list = $("<ul>").addClass("list-group");
 
+  // return html for student name and delete button
   const createListItem = name => `
     <li class="list-group-item">
       <div
@@ -17,24 +18,42 @@ $(function() {
     </li>
   `;
 
+  // renders list of students to the DOM
   const renderStudentList = () => {
-    $list.empty().append(...students.names().sort().map(createListItem));
+    $list.empty().append(
+      ...students
+        .names()
+        .sort()
+        .map(createListItem)
+    );
     $roster.empty().append(`<p>Count: ${students.names().length}</p>`, $list);
   };
 
+  // Adds student name to store or display alert if an error occurs
+  const tryToAddStudent = name => {
+    try {
+      students.addStudent(name);
+    } catch (error) {
+      window.alert(`${name} not added.\n${error.message}`);
+    }
+  };
+
+  // Get user input and add new students
   const handleFormSubmit = e => {
     e.preventDefault();
-    const newNames = $("#add-students")
+    const $addStudentInput = $("#add-students");
+    const newNames = $addStudentInput
       .val()
       .trim()
       .split(",")
       .map(name => name.trim());
 
-    newNames.forEach(name => name && students.addStudent(name));
+    newNames.forEach(name => name && tryToAddStudent(name));
     renderStudentList();
+    $addStudentInput.val("");
   };
 
-  const initForm = () => {
+  const initAddStudentsForm = () => {
     $("#add-students-form").on("submit", handleFormSubmit);
   };
 
@@ -44,7 +63,7 @@ $(function() {
     renderStudentList();
   };
 
-  initForm();
+  initAddStudentsForm();
   renderStudentList();
   $("body").on("click", ".delete-student", handleStudentDelete);
 });
